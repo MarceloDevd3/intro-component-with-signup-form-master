@@ -1,0 +1,50 @@
+@keyframes movebg {
+    0% {
+      background-image: url(/images/bg-intro-mobile.png);
+      background-position: 0% 50% ;
+    }
+  
+  
+    100% {
+      background-image: url(/images/bg-intro-mobile.png);
+      background-position: 0% -100% ;
+    }
+  }
+
+
+
+
+  @keyframes shake {
+    0%{
+      position: relative;
+      left: -5px;
+    }
+  
+    25%{
+      position: relative;
+      left: 0;
+    }
+  
+    50%{
+      position: relative;
+      right: -5px;
+    }
+  
+    100%{
+      position: relative;
+      right: 0;
+    }
+  }
+
+  
+  
+  @keyframes load {
+    0% {
+     opacity: 0%;
+    }
+  
+    100% {
+     opacity: 100%;
+    }
+  }
+  

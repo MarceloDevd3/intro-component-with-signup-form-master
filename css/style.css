@@ -1,0 +1,321 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+:root{
+  --Red: hsl(0, 100%, 74%) ;
+  --Green: hsl(154, 59%, 51%);
+  --Blue: hsl(248, 32%, 49%);
+  --Dark-Blue: hsl(249, 10%, 26%) ;
+  --Grayish-Blue: hsl(246, 25%, 77%);
+}
+
+
+
+
+body {
+  background-image: url(./images/bg-intro-mobile.png) ;
+  background-color: var(--Red);
+  font-size: 16px;
+  animation: movebg ease-in-out infinite 10s;
+}
+
+.card {
+  margin:20px auto;
+  width:338px ;
+  height: 720px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card .info {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.info h1 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.info p {
+  font-size: 14px;
+  color: var(--Grayish-Blue);
+  margin-bottom: 15px;
+}
+
+.form {
+  padding: 15px;
+}
+
+
+.form .float-box {
+  width: 280px;
+  height: 55px;
+  padding: 10px;
+  margin-left: 0px;
+  background-color: var(--Blue);
+  border-radius: 5px;
+  text-align: center;
+}
+
+.strong-white-txt {
+  font-weight:500;
+  color: #fff;
+}
+
+.light {
+  color: var(--Grayish-Blue);
+  font-weight: 300;
+}
+
+form {
+  margin-top: 25px;
+  width: 300px;
+  max-height: 476px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  margin-left: -10px;
+}
+
+
+input::placeholder{
+  padding-left: 5px;
+}
+
+input {
+  padding-left:10px;
+}
+
+input:focus {
+  outline: none;
+}
+.red {
+  color: var(--Red);
+}
+
+
+
+input {
+  width: 280px;
+  height: 50px;
+  border-radius: 5px;
+  margin-top: 13px;
+  margin-bottom: 7px;
+  border: 1px solid gainsboro;
+}
+
+button {
+  border: none;
+  width: 290px;
+  height: 50px;
+  margin: 15px 0 5px 0;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: var(--Green);
+  font-weight: 600;
+}
+
+
+button:hover{
+  transition-timing-function: ease-in-out;
+  transition-duration: 2s;
+  background-color: hsl(154, 63%, 43%);
+}
+
+button:active {
+  background-color:hsl(154, 91%, 52%) ;
+}
+
+.box-invisible {
+  margin-top: 15px;
+  font-size: small;
+  text-align: center;
+  color: var(--Grayish-Blue);
+}
+
+
+
+ label {
+  position: relative;
+  top: 0px;
+}
+
+
+
+
+
+.small {
+  padding: 2px;
+}
+
+
+.small {
+  font-size: x-small;
+  color:var(--Red);
+  float: right;
+  margin-top: -5px;
+  margin-bottom: 0;
+  margin-right: 10px;
+}
+
+
+
+
+.red-line {
+  border-color: var(--Red);
+  animation: shake  ease-in-out 0.5s;
+}
+
+
+.sucess-line  {
+  border-color: gainsboro;
+}
+
+
+i {
+  position: absolute;
+  top: 30px;
+  right: 15px;
+  visibility: hidden;
+  color: var(--Red);
+}
+
+
+
+.form-control i {
+  animation: load ease-in 0.5s;
+  visibility: visible;
+}
+
+
+.form-control input::placeholder {
+  color: var(--Red);
+}
+
+
+
+@media (min-width:1440px) {
+  body {
+    background-image: url(./images/bg-intro-desktop.png);
+    background-color: var(--Red);
+    animation: movebg ease-in-out infinite 10s  ;
+  }
+  
+
+  .info .break {
+    display: none;
+  }
+
+
+  
+.card .info {
+  margin-top: 20px;
+  margin-left: 50px;
+  text-align: left;
+}
+
+.info h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.info p {
+  font-size: 1rem;
+  color: var(--Grayish-Blue);
+  margin-bottom: 15px;
+}
+
+
+
+
+  .card {
+    margin:75px auto;
+    width:1100px ;
+    height: 700px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+
+  form {
+    width: 500px;
+    max-height: 580px;
+    border-radius: 15px;
+    align-items: flex-start;
+    justify-content: center;
+    
+    padding: 0px;
+    margin-left: 0px;
+  }
+  
+
+  form label {
+    margin-left: -25px;
+  }
+  
+
+  
+input {
+  width: 400px;
+  height: 50px;
+  margin-left: 70px;
+  border-radius: 5px;
+  margin-top: 25px;
+}
+
+button {
+  border: none;
+  width: 410px;
+  height: 50px;
+  margin-left: 45px;
+}
+
+.form .float-box {
+  width: 490px;
+   padding: 5px;
+}
+
+
+
+
+.small {
+  font-size: small;
+  float: right;
+  position: relative;
+  left: -40px;
+}
+
+
+i {
+  top: 40px;
+  right: 70px;
+  color: var(--Red);
+}
+
+
+.box-invisible {
+  margin-left: 100px;
+  margin-top: 7px;
+  font-size: small;
+  text-align: center;
+  color: var(--Grayish-Blue);
+}
+
+
+
+  
+}
+
